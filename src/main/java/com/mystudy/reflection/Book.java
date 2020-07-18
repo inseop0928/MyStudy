@@ -10,6 +10,7 @@ public class Book {
 
     private String a = "a";
 
+    @MyAnnotation("test")
     public String d = "d";
 
     protected String e = "e";
@@ -18,7 +19,6 @@ public class Book {
 
     }
 
-    @AnotherAnnotation
     public Book(String a, String d, String e) {
         this.a = a;
         this.d = d;
@@ -28,7 +28,7 @@ public class Book {
     private void f(){
         System.out.println("f");
     }
-
+    @AnotherAnnotation
     public  void g(){
         System.out.println("g");
     }
